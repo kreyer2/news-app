@@ -1,0 +1,95 @@
+.news
+  background-image: url("./img/bg-grey.jpg")
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: cover
+  height: auto
+  min-height: 90%
+  &__error-message
+    position: absolute
+    margin-top: 50px
+    margin-left: 30px
+    img
+      max-width: 50px
+  &__list
+    padding: 80px 0 20px 0
+    margin: 0
+    list-style-type: none
+    display: grid
+    grid-template-rows: repeat(1, 1fr)
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 1vw
+    color: #565656
+  &__element
+  &__title
+    font-weight: 700
+    font-size: 16px
+  &__image
+    img
+      max-width: 310px
+      height: 220px
+  &__description
+    font-size: 14px
+  &__loader-wrapper
+    padding-top: 150px
+  &__loader
+    margin: 0 auto
+
+    border: 8px solid #aeaeae
+    border-top: 8px solid #f95353
+    border-radius: 50%
+    width: 80px
+    height: 80px
+    animation: spin 1s linear infinite
+    @keyframes spin
+      0%
+        transform: rotate(0deg)
+      100%
+        transform: rotate(360deg)
+
+
+@media (max-width: 970px)
+  .news
+    &__image
+      img
+        max-width: 340px
+    &__list
+      grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 767px)
+  .news
+    &__element
+      max-width: 300px
+    &__image
+      img
+        max-width: 300px
+    &__list
+      grid-gap: 1vw
+      padding-top: 80px
+
+@media (max-width: 630px)
+  .news
+    &__element
+      max-width: 250px
+    &__image
+      img
+        max-width: 250px
+    &__list
+      grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 539px)
+  .news
+    &__element
+      max-width: 100%
+    &__image
+      img
+        display: inline-block
+        max-width: 100%
+    &__list
+      padding-top: 50px
+      grid-template-columns: repeat(1, 1fr)
+    &__element
+      padding-bottom: 20px
+
+
+

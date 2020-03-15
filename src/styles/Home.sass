@@ -1,0 +1,29 @@
+.home
+  background: linear-gradient(19deg, rgba(85,85,85,0.5) 0%, rgba(85,85,85,0.5) 100%), url('img/bg-bridge.jpg')
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: cover
+  height: 90%
+  color: white
+  &__body
+    height: 100%
+    padding-bottom: 60px
+  &__title
+    display: block
+    text-align: center
+    text-transform: uppercase
+    font-weight: 700
+    color: #f95353
+  &__description
+    text-align: center
+    color: #cfd8da
+    display: block
+    font-weight: 700
+    padding: 20px 0
+  &__button
+    display: block
+    text-transform: uppercase
+@media (max-width: 767px)
+  .home
+    &__body
+      padding-bottom: 0
